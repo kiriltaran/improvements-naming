@@ -9,7 +9,7 @@
 
 _Exception: variables that contain boolean_
 
-##### Bad
+###### Bad
 
 ```javascript
 const getText = ''
