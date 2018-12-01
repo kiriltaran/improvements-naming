@@ -12,13 +12,13 @@ _Exception: variables that contain boolean_
 ###### Bad
 
 ```javascript
-const getText = ''
+const getEmptyString = ''
 ```
 
 ###### Good
 
 ```javascript
-const text = ''
+const emptyString = ''
 ```
 <br><br>
 
