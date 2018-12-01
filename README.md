@@ -15,7 +15,7 @@ _Exception: variables that contain boolean_
 const getText = ''
 ```
 
-**Good**
+###### Bad
 
 ```javascript
 const text = ''
@@ -30,7 +30,7 @@ const text = ''
 const valid = true
 ```
 
-**Good**
+###### Bad
 
 ```javascript
 const isValid = true
@@ -47,7 +47,7 @@ const validationMessages = {}
 
 ```
 
-**Good**
+###### Bad
 
 ```javascript
 const DEFAULT_USER_ROLE = ''
@@ -65,7 +65,7 @@ _Exception: not called computed properties and getters in Vue_
 const validation = () => {}
 ```
 
-**Good**
+###### Bad
 
 ```javascript
 const validate = () => {}
@@ -81,7 +81,7 @@ const valid = () => true
 const isAuthorized = () => true
 ```
 
-**Good**
+###### Bad
 
 ```javascript
 const checkValidity = () => true
@@ -103,7 +103,7 @@ computed: {
 }
 ```
 
-**Good**
+###### Bad
 
 ```javascript
 computed: {
@@ -124,7 +124,7 @@ methods: {
 }
 ```
 
-**Good**
+###### Bad
 
 ```javascript
 methods: {
@@ -148,7 +148,7 @@ mutations: {
 }
 ```
 
-**Good**
+###### Bad
 
 ```javascript
 methods: {
