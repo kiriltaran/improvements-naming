@@ -9,7 +9,7 @@
 
 _Exception: variables that contain boolean_
 
-**Bad**
+##### Bad
 
 ```javascript
 const getText = ''
@@ -24,7 +24,7 @@ const text = ''
 
 #### All variable names that contain boolean should start from `is/are` or `have/has`
 
-**Bad**
+##### Bad
 
 ```javascript
 const valid = true
@@ -39,7 +39,7 @@ const isValid = true
 
 #### Constant variables and dictionaries should be named uppercase with splitting words by underscore(CONSTANT_CASE)
 
-**Bad**
+##### Bad
 
 ```javascript
 const defaultUserRole = ''
@@ -59,7 +59,7 @@ const VALIDATION_MESSAGES = {}
 
 _Exception: not called computed properties and getters in Vue_
 
-**Bad**
+##### Bad
 
 ```javascript
 const validation = () => {}
@@ -74,7 +74,7 @@ const validate = () => {}
 
 #### All Function names that returns boolean should start from `check`
 
-**Bad**
+##### Bad
 
 ```javascript
 const valid = () => true
@@ -94,7 +94,7 @@ const checkAuthorization = () => true
 
 #### Computed properties should be named as functions if are called and as variables if are not called
 
-**Bad**
+##### Bad
 
 ```javascript
 computed: {
@@ -115,7 +115,7 @@ computed: {
 
 #### Methods should be named as functions
 
-**Bad**
+##### Bad
 
 ```javascript
 methods: {
@@ -139,7 +139,7 @@ methods: {
 
 #### Mutations should be named as functions in CONSTANT_CASE and start with `ADD/SET/UPDATE/DELETE/RESET`
 
-**Bad**
+##### Bad
 
 ```javascript
 mutations: {
