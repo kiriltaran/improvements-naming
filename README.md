@@ -20,7 +20,8 @@ const getEmptyString = ''
 ```javascript
 const emptyString = ''
 ```
-<br><br>
+
+</br>
 
 #### All variable names that contain boolean should start from `is/are` or `have/has`
 
@@ -35,7 +36,8 @@ const valid = true
 ```javascript
 const isValid = true
 ```
-<br><br>
+
+</br>
 
 #### Constant variables and dictionaries should be named uppercase with splitting words by underscore(CONSTANT_CASE)
 
@@ -53,7 +55,8 @@ const validationMessages = {}
 const DEFAULT_USER_ROLE = ''
 const VALIDATION_MESSAGES = {}
 ```
-<br><br>
+
+</br>
 
 #### Function names should be a verbs
 
@@ -70,7 +73,8 @@ const validation = () => {}
 ```javascript
 const validate = () => {}
 ```
-<br><br>
+
+</br>
 
 #### All Function names that returns boolean should start from `check`
 
@@ -87,7 +91,8 @@ const isAuthorized = () => true
 const checkValidity = () => true
 const checkAuthorization = () => true
 ```
-<br><br>
+
+</br>
 
 ## Vue
 ---
@@ -111,7 +116,8 @@ computed: {
   getUserById(id) {}
 }
 ```
-<br><br>
+
+</br>
 
 #### Methods should be named as functions
 
@@ -132,12 +138,13 @@ methods: {
   getUser() {}
 }
 ```
-<br><br>
+
+</br>
 
 ## Vuex
 ---
 
-#### Mutations should be named as functions in CONSTANT_CASE and start with `ADD/SET/UPDATE/DELETE/RESET`
+#### Mutations should be named as functions in CONSTANT_CASE and start with `ADD/SET/UPDATE/DELETE`
 
 ###### Bad
 
@@ -156,4 +163,47 @@ methods: {
   UPDATE_SETTINGS() {}
 }
 ```
-<br><br>
+
+</br>
+
+#### Actions should be named as functions
+
+###### Bad
+
+```javascript
+mutations: {
+  googleAuthorization() {}
+}
+```
+
+###### Good
+
+```javascript
+methods: {
+  authorizeByGoogle() {}
+}
+```
+
+</br>
+
+#### Getters should be named as functions if are called and as variables if are not called
+
+###### Bad
+
+```javascript
+computed: {
+  checkUserAuthorization() {},
+  userById(id) {}
+}
+```
+
+###### Good
+
+```javascript
+computed: {
+  isUserAuthorized(),
+  getUserById(id) {}
+}
+```
+
+</br>
