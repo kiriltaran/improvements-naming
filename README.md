@@ -192,6 +192,7 @@ actions: {
 
 ```javascript
 getters: {
+  getUser() {},
   checkUserAuthorization() {},
   userById(id) {}
 }
@@ -201,6 +202,7 @@ getters: {
 
 ```javascript
 getters: {
+  user(),
   isUserAuthorized(),
   getUserById(id) {}
 }
