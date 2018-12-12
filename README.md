@@ -158,7 +158,7 @@ mutations: {
 ###### Good
 
 ```javascript
-methods: {
+mutations: {
   ADD_USER() {},
   UPDATE_SETTINGS() {}
 }
@@ -171,7 +171,7 @@ methods: {
 ###### Bad
 
 ```javascript
-mutations: {
+actions: {
   googleAuthorization() {}
 }
 ```
@@ -179,7 +179,7 @@ mutations: {
 ###### Good
 
 ```javascript
-methods: {
+actions: {
   authorizeByGoogle() {}
 }
 ```
@@ -191,7 +191,7 @@ methods: {
 ###### Bad
 
 ```javascript
-computed: {
+getters: {
   checkUserAuthorization() {},
   userById(id) {}
 }
@@ -200,7 +200,7 @@ computed: {
 ###### Good
 
 ```javascript
-computed: {
+getters: {
   isUserAuthorized(),
   getUserById(id) {}
 }
