@@ -112,7 +112,7 @@ computed: {
 
 ```javascript
 computed: {
-  isUserAuthorized(),
+  isUserAuthorized() {},
   getUserById(id) {}
 }
 ```
@@ -126,7 +126,7 @@ computed: {
 ```javascript
 methods: {
   isUserAuthorized() {},
-  user()
+  user() {}
 }
 ```
 
@@ -134,7 +134,7 @@ methods: {
 
 ```javascript
 methods: {
-  checkUserAuthorization(),
+  checkUserAuthorization() {},
   getUser() {}
 }
 ```
@@ -161,6 +161,30 @@ mutations: {
 mutations: {
   ADD_USER() {},
   UPDATE_SETTINGS() {}
+}
+```
+
+Better use modules for every entity with constant set of consistent mutations
+
+###### Better
+
+```javascript
+// modules/moduleA
+
+mutations: {
+  ADD() {},
+  SET() {},
+  UPDATE() {},
+  DELETE() {},
+}
+
+// modules/moduleB
+
+mutations: {
+  ADD() {},
+  SET() {},
+  UPDATE() {},
+  DELETE() {},
 }
 ```
 
@@ -202,8 +226,8 @@ getters: {
 
 ```javascript
 getters: {
-  user(),
-  isUserAuthorized(),
+  user() {},
+  isUserAuthorized() {},
   getUserById(id) {}
 }
 ```
