@@ -141,6 +141,28 @@ methods: {
 
 </br>
 
+#### Event handlers names should start from `on` and prefer to use event name in method name
+
+###### Bad
+
+```javascript
+<CustomComponent @event-name="action" />
+```
+
+###### Good
+
+```javascript
+<CustomComponent @event-name="onAction" />
+```
+
+###### Better
+
+```javascript
+<CustomComponent @event-name="onEventName" />
+```
+
+</br>
+
 ## Vuex
 ---
 
