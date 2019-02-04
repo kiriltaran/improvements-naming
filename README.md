@@ -5,7 +5,7 @@
 ## JavaScript
 ---
 
-#### Variable names should be a nouns
+#### Use nouns for variable names
 
 _Exception: variables that contain boolean_
 
@@ -23,7 +23,7 @@ const emptyString = ''
 
 </br>
 
-#### All variable names that contain boolean should start from `is/are` or `have/has`
+#### Use `is/are` or `have/has` prefixes for boolean variable
 
 ###### Bad
 
@@ -39,7 +39,7 @@ const isValid = true
 
 </br>
 
-#### Constant variables and dictionaries should be named uppercase with splitting words by underscore(CONSTANT_CASE)
+#### Use uppercase with splitting words by underscore(CONSTANT_CASE) for constant variables and dictionaries 
 
 ###### Bad
 
@@ -58,7 +58,7 @@ const VALIDATION_MESSAGES = {}
 
 </br>
 
-#### Function names should be a verbs
+#### Use verbs for functions names
 
 _Exception: not called computed properties and getters in Vue_
 
@@ -76,7 +76,7 @@ const validate = () => {}
 
 </br>
 
-#### All Function names that returns boolean should start from `check`
+#### Use `check` for functions names that returns boolean
 
 ###### Bad
 
@@ -97,8 +97,7 @@ const checkAuthorization = () => true
 ## Vue
 ---
 
-#### Computed properties should be named as functions if are called and as variables if are not called
-
+#### Use variable naming for computed properties without parameter and function naming for computed properties with parameter
 ###### Bad
 
 ```javascript
@@ -119,7 +118,7 @@ computed: {
 
 </br>
 
-#### Methods should be named as functions
+#### Use function naming for methods section
 
 ###### Bad
 
@@ -141,7 +140,7 @@ methods: {
 
 </br>
 
-#### Event handlers names should start from `on` and prefer to use event name in method name
+#### Use `on` prefix for event handlers names. Also prefer to use event name in method name
 
 ###### Bad
 
@@ -166,7 +165,7 @@ methods: {
 ## Vuex
 ---
 
-#### Mutations should be named as functions in CONSTANT_CASE and start with `ADD/SET/UPDATE/DELETE`
+#### Use CONSTANT_CASE and `ADD/SET/UPDATE/DELETE` prefixes for mutations
 
 ###### Bad
 
@@ -212,7 +211,7 @@ mutations: {
 
 </br>
 
-#### Actions should be named as functions
+#### Use function naming for actions
 
 ###### Bad
 
@@ -232,7 +231,7 @@ actions: {
 
 </br>
 
-#### Getters should be named as functions if are called and as variables if are not called
+#### Use variable naming for getters without parameter and function naming for getters with parameter
 
 ###### Bad
 
